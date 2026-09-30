@@ -24,3 +24,13 @@ ggsave("figs/1_flipper_bodymass_regression.png")
 
 # subset the data
 penguins_female<-subset(penguins,sex=="female")
+
+# save the edited data
+write_tsv(penguins_female, "results/1_penguin_female_only.txt")
+
+
+# make an edit to add a new commit to github
+x<-1:10
+y<-10:1
+plot(x,y)
+
